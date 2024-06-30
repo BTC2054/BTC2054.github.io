@@ -4,8 +4,30 @@
     "avatarUrl":"https://img.btc2054.com/file/e5385fbbee1675a1a3643.jpg",
     "GMEEK_VERSION":"last",
     "startSite":"04/01/2024",
-    "style":"<style>#postBody{font-size:20px}</style>",
-    "script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>"
+    "indexScript":"<span id="span_dt_dt" style="color: #2F889A;"></span>
+<script language="javascript">
+    function show_date_time(){
+        setInterval(function() {
+            // 这里修改站点开启日期
+            const BirthDay = new Date("2024/06/20 20:00:00");
+            const today = new Date();
+            const timeold = today.getTime() - BirthDay.getTime();
+            const msPerDay = 24 * 60 * 60 * 1000;
+            const e_daysold = timeold / msPerDay;
+            const daysold = Math.floor(e_daysold);
+            const e_hrsold = (e_daysold - daysold) * 24;
+            const hrsold = Math.floor(e_hrsold);
+            const e_minsold = (e_hrsold - hrsold) * 60;
+            const minsold = Math.floor(e_minsold);
+            const seconds = Math.floor((e_minsold - minsold) * 60);
+
+            const span_dt_dt = document.getElementById('span_dt_dt');
+            span_dt_dt.innerHTML = '本站已运行 <font style="color:#C40000">' + daysold + '</font> 天 <font style="color:#C40000">' + hrsold + '</font> 时 <font style="color:#C40000">' + minsold + '</font> 分 <font style="color:#C40000">' + seconds + '</font> 秒';
+        }, 1000);
+    }
+    show_date_time();
+</script>
+"
 }
 
 
