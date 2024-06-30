@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
-    <link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fzh.wikipedia.org%2Fzh-tw%2F%25E4%25B8%25AD%25E6%259C%25AC%25E8%2581%25AA&psig=AOvVaw3GvLO9Z-zywBThs4wnYicj&ust=1719803236157000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPCB37qsgocDFQAAAAAdAAAAABAJ"><script>
+    <link rel="icon" href="https://img.btc2054.com/file/e5385fbbee1675a1a3643.jpg"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="定存30年 search page">
-<title>定存30年 - Tag</title>
+<meta name="description" content="定存30年（2024.04 — 2054.04） search page">
+<title>定存30年（2024.04 — 2054.04） - Tag</title>
 
 </head>
 <style>
@@ -75,7 +75,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <nav class="SideNav"></nav>
 <div class="notFind" style="display:none;font-size:24px;margin:8px;">Not Find</div>
 </div>
-    <div id="footer">Copyright © <span id="year"></span><a href="https://laobaby01.github.io"> 定存30年 </a>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://laobaby01.github.io"> 定存30年（2024.04 — 2054.04） </a>
 <p>
 <span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
 </p>
@@ -236,7 +236,7 @@ function setClassDisplay(label){
     let lists = document.getElementsByClassName("lists");
     let tagTitle = document.getElementsByClassName("tagTitle")[0];
     tagTitle.innerHTML="Tag #"+label;
-    document.title=label+" - 定存30年";
+    document.title=label+" - 定存30年（2024.04 — 2054.04）";
     document.getElementsByClassName("subnav-search-input")[0].value='';
     if(label=="All"){
         for(let i = 0; i < lists.length; i++){lists[i].style.display='block';}
@@ -264,8 +264,8 @@ function searchShow(){
     let tagTitle = document.getElementsByClassName("tagTitle")[0];
     let searchInput = document.getElementsByClassName("subnav-search-input")[0].value;
     tagTitle.innerHTML="Search #"+searchInput;
-    if(searchInput==''){document.title="Search - 定存30年";}
-    else{document.title=searchInput+" - 定存30年";}
+    if(searchInput==''){document.title="Search - 定存30年（2024.04 — 2054.04）";}
+    else{document.title=searchInput+" - 定存30年（2024.04 — 2054.04）";}
     let a=0;
     window.location.hash="#"+(searchInput);
     for(let i = 0; i < lists.length; i++){
