@@ -4,9 +4,7 @@
     "avatarUrl":"https://img.btc2054.com/file/e5385fbbee1675a1a3643.jpg",
     "GMEEK_VERSION":"last",
     "startSite":"04/01/2024",
-    "indexScript":"<span id="span_dt_dt" style="color: #2F889A;"></span>
-                   <script language="javascript">
-                       function show_date_time(){
+    "indexScript":"<span id="span_dt_dt" style="color: #2F889A;"></span><script language="javascript">function show_date_time(){
                            setInterval(function() {
                                // 这里修改站点开启日期
                                const BirthDay = new Date("2024/06/20 20:00:00");
