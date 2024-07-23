@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     
-    <link rel="icon" href="https://shouyi.btc2054.com"><script>
+    <link rel="icon" href="https://s2.loli.net/2024/06/30/aQGzpiBZ3bWFxy2.jpg"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
@@ -63,7 +63,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
             <path id="pathSearch" fill-rule="evenodd"></path>
         </svg>
     </a>
-    
+    <a href="https://shouyi.btc2054.com/" class="btn btn-invisible circle" title="收益曲线图" target="_blank">
+        <svg class="octicon" width="16" height="16" >
+            <path id="收益曲线图" fill-rule="evenodd"></path>
+        </svg>
+    </a>
     
     <a href="https://BTC2054.github.io/rss.xml" target="_blank" id="buttonRSS" class="btn btn-invisible circle" title="RSS">
         <svg class="octicon" width="16" height="16" >
@@ -212,6 +216,7 @@ for(var i=0;i<iconPost.length;i++){
 }
 
 
+document.getElementById("收益曲线图").setAttribute("d",value=IconList["收益曲线图"]);
 
 
 </script>
