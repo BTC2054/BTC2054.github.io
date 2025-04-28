@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     
-    <link rel="icon" href="https://img.btc2054.com/aQGzpiBZ3bWFxy2.jpg"><script>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/90368994?v=4"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
@@ -25,7 +25,7 @@
   狗屎运捡了个红包 +2.79 USDT，因为USDT简单赚币180天10%理财权益到期了，所以这部分USDT转成了USDC继续10%躺平，另外币安转过来的这部分直接买了29天月底到期的双币赢理财。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://BTC2054.github.io/post/2025-nian-02-yue-%EF%BC%9A-ding-cun-di-11-360-qi.html">
-<meta property="og:image" content="https://img.btc2054.com/aQGzpiBZ3bWFxy2.jpg">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/90368994?v=4">
 <title>2025年02月：定存第11/360期</title>
 
 
@@ -95,6 +95,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>理财账户一共赎回：959.4098552 USDC + 0.27034483 ETH，币价大跌，但无所谓全当屯币，目前账户价值1604.66 USDT。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
 </div>
     <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://BTC2054.github.io">BTC2054</a></div>
 <div id="footer2">
@@ -151,6 +154,41 @@ document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
 
 
 
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","BTC2054/BTC2054.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
 
 
 
