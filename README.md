@@ -1,6 +1,5 @@
-# BTC2054 :link: https://BTC2054.github.io 
-### :page_facing_up: [17](https://BTC2054.github.io/tag.html) 
-### :speech_balloon: 2 
-### :hibiscus: 12013 
-### :alarm_clock: 2025-07-01 21:52:39 
+# 原生链接 :link: https://BTC2054.github.io 
+# 正式域名 :link: https://www.BTC2054.com 
+# 草稿地址 :link: https://www.blog.BTC2054.com 
+
 ### Powered by :heart: [Gmeek](https://github.com/Meekdai/Gmeek)
